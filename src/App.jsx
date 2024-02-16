@@ -12,7 +12,7 @@ function App() {
         <BannerContainer /><br />
         <Slide /><br />
         <InputsContainer />
-        
+        <FooterContainer /><br />
 
     </div>
   );
