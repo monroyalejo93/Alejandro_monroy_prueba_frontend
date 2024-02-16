@@ -1,0 +1,394 @@
+.banner_title {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 40px;
+
+}
+
+.banner_subtitle {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 19px;
+}
+
+.banner_paragraph {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12px;
+}
+
+
+.banner_container {
+  margin-top: 0px;
+  text-align: left;
+  display: flex;
+  /* Utiliza flexbox para manejar el diseño */
+
+}
+
+.text_container {
+  padding-left: 7vh;
+  padding-right: 7vh;
+  padding-bottom: 5vh;
+  line-height: 1;
+}
+
+.gothere_button {
+  border: none;
+  background-color: #3C5973;
+  padding: 5px 5px 8px 5px;
+  border-radius: 5px;
+  width: auto;
+  text-align: left;
+  height: auto;
+}
+
+.gothere_button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  box-shadow: 0 0 10px #ffffff;
+  cursor: pointer;
+}
+
+.gothere_button_text {
+  color: #0C1726;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 13px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.button_play_icon {
+  font-size: 13px;
+  margin-left: 20px;
+  margin-right: 0px;
+  vertical-align: middle;
+}
+
+.general_container {
+  flex: 3;
+  /* El primer div tomará el 50% del espacio disponible */
+  padding: 0px;
+  background-color: #0C1726;
+  max-width: 70%;
+}
+
+.animation_container {
+  flex: 2;
+  padding: 0;
+  background: linear-gradient(90deg, #0C1726, #3C5973, #8C8377, #FFFFFF);
+  background-size: 400% 400%;
+  animation: gradientBackground 20s linear infinite;
+  /* Ajusta la duración total */
+}
+
+.banner_animation {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+.banner_animation div {
+  width: 70px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  border-radius: 5px;
+  border-top: solid 2px rgba(0, 0, 0, .2);
+  border-left: solid 3px rgba(255, 255, 255, .2);
+  border-bottom: solid 3px rgba(0, 0, 0, .2);
+  text-align: center;
+  box-sizing: border-box;
+  transform-origin: center 90%;
+  display: inline-block;
+  backface-visibility: hidden;
+  margin-left: -35px;
+  transform: rotate(0deg);
+}
+
+.banner_animation div:before {
+  width: 16px;
+  height: 16px;
+  content: "";
+  display: inline-block;
+  border-radius: 8px;
+  bottom: 10px;
+  position: absolute;
+  margin-left: -8px;
+}
+
+.banner_animation div:nth-child(1) {
+  background-color: #3C5973;
+  animation: rotateAnimationLeftOne 10s cubic-bezier(0.4, 0.0, 0.5, 2) infinite;
+  z-index: 1;
+}
+
+.banner_animation div:nth-child(2) {
+  background-color: #ffffff;
+  animation: rotateAnimationLeftTwo 10s cubic-bezier(0.4, 0.0, 0.5, 2) infinite;
+  z-index: 2;
+}
+
+.banner_animation div:nth-child(3) {
+  background-color: #8C8377;
+  animation: rotateAnimationLeftThree 10s cubic-bezier(0.4, 0.0, 0.5, 2) infinite;
+  z-index: 3;
+}
+
+.banner_animation div:nth-child(4) {
+  background-color: #0C1726;
+  animation: rotateAnimationLeftFour 10s cubic-bezier(0.4, 0.0, 0.5, 2) infinite;
+  z-index: 4;
+}
+
+.banner_animation div:nth-child(5) {
+  background-color: #3C5973;
+  animation: rotateAnimationRightFour 10s cubic-bezier(0.4, 0.0, 0.5, 2) infinite;
+  z-index: 4;
+}
+
+.banner_animation div:nth-child(6) {
+  background-color: #8C8377;
+  /* Gris */
+  animation: rotateAnimationRightThree 10s cubic-bezier(0.4, 0.0, 0.5, 2) infinite;
+  z-index: 3;
+}
+
+.banner_animation div:nth-child(7) {
+  background-color: #ffffff;
+  animation: rotateAnimationRightTwo 10s cubic-bezier(0.4, 0.0, 0.5, 2) infinite;
+  z-index: 2;
+}
+
+.banner_animation div:nth-child(8) {
+  background-color: #0C1726;
+  animation: rotateAnimationRightOne 10s cubic-bezier(0.4, 0.0, 0.5, 2) infinite;
+  z-index: 1;
+}
+
+.banner_animation div:nth-child(9) {
+  background-color: #ffffff;
+  background-image: url('../assets/Logo.jpg');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 5;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  10% {
+    background-position: 100% 50%;
+    /* Transición más rápida al principio */
+  }
+
+  50% {
+    background-position: 0% 50%;
+  }
+
+  75% {
+    background-position: 100% 50%;
+    /* Transición más rápida a la mitad */
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rotateAnimationLeftOne {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30%,
+  70% {
+    transform: rotate(-90deg);
+  }
+
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateAnimationLeftTwo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30%,
+  70% {
+    transform: rotate(-65deg);
+  }
+
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateAnimationLeftThree {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30%,
+  70% {
+    transform: rotate(-40deg);
+  }
+
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateAnimationLeftFour {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30%,
+  70% {
+    transform: rotate(-15deg);
+  }
+
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateAnimationRightFour {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30%,
+  70% {
+    transform: rotate(15deg);
+  }
+
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateAnimationRightThree {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30%,
+  70% {
+    transform: rotate(40deg);
+  }
+
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateAnimationRightTwo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30%,
+  70% {
+    transform: rotate(65deg);
+  }
+
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateAnimationRightOne {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30%,
+  70% {
+    transform: rotate(90deg);
+  }
+
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+
+
+/* Estilos generales para tamaños grandes de pantalla (Desktop) */
+@media screen and (min-width: 1024px) {
+  .animation_container {
+    flex: 2;
+    padding: 0;
+  }
+
+  .banner_animation {
+    margin: 50px;
+  }
+
+  .banner_animation div {
+    width: 70px;
+    height: 100px;
+    margin-left: -35px;
+  }
+}
+
+/* Estilos para tamaños de pantalla medianos (Tablet) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .animation_container {
+    flex: 2;
+    padding: 0;
+  }
+
+  .banner_animation {
+    margin: 30px;
+  }
+
+  .banner_animation div {
+    width: 50px;
+    height: 70px;
+    margin-left: -25px;
+    margin-top: 80px;
+  }
+}
+
+/* Estilos para tamaños de pantalla pequeños (Móvil) */
+@media screen and (max-width: 767px) {
+  .animation_container {
+    flex: 2;
+    padding: 0;
+  }
+
+  .banner_animation {
+    margin: 20px;
+  }
+
+  .banner_animation div {
+    width: 40px;
+    height: 60px;
+    margin-left: -20px;
+    margin-top: 160px;
+  }
+}
