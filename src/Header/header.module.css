@@ -1,0 +1,78 @@
+.navbar_text {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.navbar_text:hover {
+    color: #ffffff; /* Cambia el color al hacer hover */
+    font-weight: 600;
+}
+
+.navbar_options_text {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+}
+
+/* Estilo para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+/* Estilo para los elementos del menú desplegable */
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #2B4157;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Estilo para los elementos dentro del menú desplegable */
+.dropdown_content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+/* Aplicar borde inferior solo a elementos que no sean los últimos */
+.dropdown_content a:last-child {
+    border-bottom: none;
+}
+
+.sub_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #2B4157;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+/* Estilo para los elementos dentro del menú desplegable */
+.sub_dropdown_content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+/* Estilo para el ícono del menú desplegable */
+.dropdown_icon {
+    font-size: 10px;
+    margin-left: 30px;
+    margin-right: 0px;
+}

@@ -1,0 +1,34 @@
+/* Estilo para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0; /* Añadido relleno para mejorar la apariencia en dispositivos más pequeños */
+}
+
+/* Estilo para los enlaces en la barra de navegación */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    padding: 10px; /* Ajusta el espacio entre los elementos de navegación */
+  }
+
+  .dropdown {
+    margin-top: 10px; /* Ajusta el margen superior del menú desplegable */
+  }
+
+  .dropdown-content,
+  .sub-dropdown-content {
+    min-width: 100%; /* Ocupar todo el ancho disponible */
+  }
+}
