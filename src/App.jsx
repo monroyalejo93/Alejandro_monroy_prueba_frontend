@@ -11,6 +11,7 @@ function App() {
 
         <BannerContainer /><br />
         <Slide /><br />
+        <InputsContainer />
         
 
     </div>

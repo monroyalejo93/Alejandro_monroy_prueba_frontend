@@ -1,0 +1,13 @@
+.slider {
+    display: inline-flex;
+    animation: slider 100s infinite linear;
+    height: 100%;
+    width: auto;
+    align-items: center;
+}
+
+@keyframes slider {
+    to {
+        transform: translateX(-50%);
+    }
+}
